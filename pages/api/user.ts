@@ -28,13 +28,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
             headless: true,
             defaultViewport: { width: 1920, height: 1080 },
             args: [
-                '--disable-gpu',
-                '--disable-dev-shm-usage',
                 '--disable-setuid-sandbox',
-                '--no-first-run',
                 '--no-sandbox',
-                '--no-zygote',
-                '--single-process', // <- this one doesn't works in Windows
             ]
         });
 

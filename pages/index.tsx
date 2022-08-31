@@ -1,31 +1,9 @@
 import type { NextPage } from 'next';
-import axios from 'axios';
 import { useState } from 'react';
 import User from '../components/User';
 
 const Home: NextPage = () => {
-
-
   const [activeTab, setActiveTab] = useState(0);
-
-  const callApi = async () => {
-    // fetch('/api/user', { headers: 
-    //   { 
-    //     'x-access-token': accessToken,
-    //     usernames: ['nianaguerrero']
-    // } })
-    //   .then((response) => console.log(response.json()));
-
-    await axios.post('/api/user',
-      {
-        usernames: ['nianaguerrero', 'jirogame']
-      }
-    ).then(res => {
-      console.log(res.data);
-    })
-
-
-  }
 
   return (
     <div id='app'
@@ -40,7 +18,6 @@ const Home: NextPage = () => {
           <button onClick={() => setActiveTab(2)}
             className={`${activeTab === 2 ? 'bg-gradient-to-bl from-white to-slate-200 shadow-lg' : ''} transition-all rounded-md py-1 px-7 font-semibold`}>Tag</button>
         </div>
-        {/* <button onClick={callApi}>Call API</button> */}
 
         {activeTab === 0 && (
           <User></User>

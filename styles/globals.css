@@ -13,12 +13,9 @@ body {
 #app {
   background-color: hsla(244, 0%, 100%, 1);
   background-image:
-    radial-gradient(at 17% 7%, rgb(51, 208, 208) 0px, transparent 50%),
-    radial-gradient(at 52% 34%, hsla(343, 95%, 77%, 1) 0px, transparent 50%),
-    radial-gradient(at 65% 69%, hsla(26, 74%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 33% 39%, hsla(188, 71%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 41% 69%, hsla(120, 65%, 75%, 1) 0px, transparent 50%),
-    radial-gradient(at 85% 61%, hsla(274, 82%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 17% 7%, rgb(51, 208, 208) 0px, transparent 50%), radial-gradient(at 52% 34%, hsla(343, 95%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 65% 69%, hsla(26, 74%, 73%, 1) 0px, transparent 50%), radial-gradient(at 33% 39%, hsla(188, 71%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 41% 69%, hsla(120, 65%, 75%, 1) 0px, transparent 50%), radial-gradient(at 85% 61%, hsla(274, 82%, 65%, 1) 0px, transparent 50%),
     radial-gradient(at 72% 5%, hsla(307, 64%, 74%, 1) 0px, transparent 50%);
 }
 
@@ -52,46 +49,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-#btn-scrapper.launch .rocket {
-  display: inline-block;
-  color: black;
-}
-
-#btn-scrapper.launch {
-  overflow-x: hidden;
-  white-space: nowrap;
-  background-image: none;
-  animation: launching 4s forwards;
-}
-
-@keyframes launching {
-  0% {
-    width: 130px;
-  }
-
-  15% {
-    background-color: white;
-  }
-
-  50% {
-    font-size: 0;
-  }
-
-  100% {
-    background-color: transparent;
-    width: 20px;
-    padding: 8px 0;
-    font-size: 0;
-  }
-}
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
